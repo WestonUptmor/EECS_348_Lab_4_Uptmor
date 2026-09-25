@@ -12,18 +12,18 @@ int main() {
         printf("Enter the temperature value");
     }
     printf("Enter the original scale (C, F, or K): ");
-    scanf("%c", &ogscale);
+    scanf(" %c", &ogscale);
     while (ogscale != 'C' && ogscale != 'F' && ogscale != 'K') {
         printf("Invalid input, must be C, F, or K, please try again\n");
         printf("Enter the original scale C, F, or K): ");
-        scanf("%c", &ogscale);
+        scanf(" %c", &ogscale);
     }
     printf("Enter the scale to convert to (C, F, or K):");
-    scanf("%c", &newscale);
-    while (newscale != 'C' && newscale != 'F' && newscale != 'F') {
+    scanf(" %c", &newscale);
+    while (newscale != 'C' && newscale != 'F' && newscale != 'K') {
         printf("Invalid input, must be C, F, or K, please try again\n");
         printf("Enter the scale to convert to (C, F, or K)");
-        scanf("%c", &newscale);
+        scanf(" %c", &newscale);
     }
     float kelvin;
     if (ogscale == 'C') {
